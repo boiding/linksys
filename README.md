@@ -33,6 +33,10 @@ Cross-referencing this with the connected devices on the router. The next comman
 
 In the router, go over to `Services > Services`. In the DHCP server section add a static lease with the corresponding MAC address and hostname. Our goto IP-address is `192.168.1.101`
 
+## Number of Leases
+A healthy maximum number of teams is 20. It is not unlikely that each team will connect 4 devices, getting a total of 80 connected devices. So we are going to set the maximum number of DHCP users to 100.
+
+Go to `Setup > Basic Setup` and in the section _Network Address Server Settings_ set the _Maximum DHCP Users_ to `100`.
 
 [wrt54gl]: https://www.linksys.com/us/p/P-WRT54GL/
 [dd-wrt]: https://wiki.dd-wrt.com
