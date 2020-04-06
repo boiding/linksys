@@ -38,6 +38,13 @@ A healthy maximum number of teams is 20. It is not unlikely that each team will 
 
 Go to `Setup > Basic Setup` and in the section _Network Address Server Settings_ set the _Maximum DHCP Users_ to `100`.
 
+## Open Port 
+For the participants server will reach out to the workshop server on port `2643`, which spells *boid* on a phone keypad. We therefor should allow traffic on that port
+
+```
+sudo ufw allow 2643
+```
+
 [wrt54gl]: https://www.linksys.com/us/p/P-WRT54GL/
 [dd-wrt]: https://wiki.dd-wrt.com
 [firmware]: https://wiki.dd-wrt.com/wiki/index.php/Linksys_WRT54GL#Firmware
